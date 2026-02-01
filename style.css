@@ -187,3 +187,77 @@ button {
 .icon-btn:hover {
     background: #c7d2fe;
 }
+
+
+
+@media (max-width: 768px) {
+
+    body {
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+
+    .form {
+        padding: 12px;
+    }
+
+    .form label {
+        display: block;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    input,
+    select {
+        width: 100%;
+        margin: 6px 0;
+    }
+
+    .text {
+        width: 100%;
+
+    }
+
+
+    .btn-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 10px;
+    }
+
+    button {
+        flex: 1 1 45%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+
+    .board {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .column {
+        min-height: auto;
+    }
+
+
+    .task {
+        font-size: 14px;
+    }
+
+    .task-meta {
+        font-size: 11px;
+    }
+
+    .icon-btn {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+}
