@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO Do List </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>To Do List || Furqan Bahrulsahlan</h2>
+
+    <div class="form">
+        <label for="tetx"> Add Task :</label>
+        <input class="text" type="text" id="taskText" placeholder="Masukkan tugas">
+        <label for="date">Add Due Date :</label>
+        <input type="date" id="dueDate">
+        <label for="priority"> Priority :</label>
+        <select id="priority">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select>
+
+        <div class="btn-wrap">
+            <button class="btn-add" onclick="addTask()"> Add Task </button>
+            <button class="btn-delete" onclick="deleteAll()">Delete All</button>
+            <button class="btn-process" onclick="proceedSelected()">DO</button>
+            <button class="btn-done" onclick="doneSelected()">Done</button>
+        </div>
+
+
+    </div>
+
+    <div class="board">
+        <div class="column">
+            <h3>To Do</h3>
+            <div id="todo"></div>
+        </div>
+
+        <div class="column">
+            <h3>In Progress</h3>
+            <div id="inprogress"></div>
+        </div>
+
+        <div class="column">
+            <h3>Done</h3>
+            <div id="done"></div>
+        </div>
+
+        <div class="column">
+            <h3>Overdue</h3>
+            <div id="overdue"></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
